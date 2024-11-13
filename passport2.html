@@ -9,9 +9,16 @@
             const surname = document.getElementsByTagName('div')[6]
             const name = document.getElementsByTagName('div')[7]
             const date = document.getElementsByTagName('div')[10]
-            surname.innerHTML = 'Chernikov'
-            name.innerHTML = 'Boris'
-            date.innerHTML = 'IX.VI.MMV'
+            if (surname.innerHTML == "Черников") {
+                surname.innerHTML = 'Chernikov'
+                name.innerHTML = 'Boris'
+                date.innerHTML = 'IX.VI.MMV'
+            }
+            else {
+                surname.innerHTML = 'Черников'
+                name.innerHTML = 'Борис'
+                date.innerHTML = '09.06.2005'
+            }
         }
     </script>
     <title>Изменяем кириллицу на латиницу по клику</title>
