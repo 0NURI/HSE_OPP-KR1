@@ -18,7 +18,7 @@
 <div class="text-center">
     <h1 id="back"><b>Аренда студии звукозаписи Bubble</b></h1>
     <br>
-    <form action="https://pooling.me/thanks" method="POST">
+    <form action="https://pooling.me/thanks" method="GET">
 
 
         <label for="client_name">Ваше имя:</label>
@@ -41,10 +41,10 @@
         <br><br>
 
         <label for="session_start_time">Время начала сессии:</label>
-        <input type="time" id="session_start_time" name="session_duration" min="00:00" step="3600" required>
+        <input type="time" id="session_start_time" name="session_start_time" min="00:00" step="3600" required>
         <br><br>
 
-        <label for="session_start_time">Количество бронируемых часов:</label>
+        <label for="time">Количество бронируемых часов:</label>
         <input type="number" id="time" name="time" min="1" required>
         <br><br>
 
