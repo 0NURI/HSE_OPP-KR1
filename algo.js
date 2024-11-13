@@ -11,13 +11,13 @@ function result() {
         } else {
             document.getElementById('result').innerText = "Ответ: Нельзя!";
         }
-        document.getElementById('a').disabled = true;
-        document.getElementById('b').disabled = true;
-        document.getElementById('c').disabled = true;
-        document.getElementById('d').disabled = true;
+        document.getElementById('a').readOnly = true;
+        document.getElementById('b').readOnly = true;
+        document.getElementById('c').readOnly = true;
+        document.getElementById('d').readOnly = true;
         res = document.getElementById('result').innerText
-        document.getElementById('submit').disabled = false;
         document.getElementById('answer').value = res;
+        document.getElementById('submit').disabled = false;
     }
 }
 function resetForm() {
@@ -27,9 +27,9 @@ function resetForm() {
     document.getElementById('d').value = '';
     document.getElementById('result').innerText = '';
     document.getElementById('submit').disabled = true;
-    document.getElementById('a').disabled = false;
-    document.getElementById('b').disabled = false;
-    document.getElementById('c').disabled = false;
-    document.getElementById('d').disabled = false;
+    document.getElementById('a').readOnly = false;
+    document.getElementById('b').readOnly = false;
+    document.getElementById('c').readOnly = false;
+    document.getElementById('d').readOnly = false;
     document.getElementById('answer').value = '';
 }
